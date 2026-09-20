@@ -32,12 +32,12 @@ Hi, How can I help you?
 
     elif user_input == "3":
       #check balance
-      pass
+      self.check_balance()
 
     elif user_input == "4":
       #withdraw
       pass
-    
+
     else:
       exit()
 
@@ -64,6 +64,15 @@ Hi, How can I help you?
     else:
       print("Nahi karne de sakta baba")
       self.menu()
+
+  def check_balance(self):
+    user_pin = input("Enter your pin: ")
+    if user_pin == self.pin:
+      print("Your balance is",self.balance)
+    else:
+      print("Chal Nikal Yaha Se!")
+    self.menu()
+
 
 obj = Atm() # Creating an object of Atm class
 
