@@ -14,3 +14,5 @@ obj = Temp()
 # Constructor helps us to actually write such code inside it which we want ourselves to handle, like the control will be entirely in our hand. 
 
 # In big applications, we write specific configuration code inside it e.g. connecting to database, etc cause we can't rely on the user for such things while other things such as connecting to internet or database, etc
+
+# God is the programmer, Earth is the class and we human beings are the objects inside that class, the thing that will be inside the constructor will be Death - the thing that God will take care of it, and no human being has will to die anytime or they will end up procrastinating the death too.
