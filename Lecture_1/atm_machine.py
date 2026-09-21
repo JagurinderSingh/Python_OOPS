@@ -97,3 +97,6 @@ obj = Atm() # Creating an object of Atm class
 # print(obj2)
 
 # There are two types of classes in the Python - Built in classes and User Defined Classes
+
+# The function written inside the class is called as method.
+# All the functions developed outside the class are called as simply the funtions.
