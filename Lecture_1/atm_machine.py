@@ -36,7 +36,7 @@ Hi, How can I help you?
 
     elif user_input == "4":
       #withdraw
-      pass
+      self.withdraw()
 
     else:
       exit()
@@ -73,9 +73,24 @@ Hi, How can I help you?
       print("Chal Nikal Yaha Se!")
     self.menu()
 
+  def withdraw(self):
+    user_pin = input("Enter the Pin: ")
+    if user_pin == self.pin:
+      #allow to withdraw
+      amount = int(input("Enter the Amount: "))
+      if amount <= self.balance: 
+        self.balance = self.balance - amount
+        print("Withdrawl successful. Balance available: ",self.balance)
+      else:
+        print("Abe Gareeb!")
+    else:
+      print("Incorrect Pin, Chor!!!")
+    self.menu()
+
+    
+
 
 obj = Atm() # Creating an object of Atm class
-
 
 #print(type(obj))
 # obj2 = Atm()
